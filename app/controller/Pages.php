@@ -1,6 +1,12 @@
 <?php
 class Pages{
     public function __construct(){
-        echo "Page loded";
+
+    }
+    public function index(){
+        echo "Pages index";
+    }
+    public function about($id){
+        echo "About ".$id;
     }
 }
