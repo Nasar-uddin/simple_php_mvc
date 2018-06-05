@@ -4,9 +4,11 @@ class Pages extends Controller{
 
     }
     public function index(){
-        $this->view("pages/index",['title'=>'Welcome']);
+        $data = ['title'=>'Welcome'];
+        $this->view("pages/index",$data);
     }
     public function about(){
-        $this->view("pages/about",['title'=>'Welcome to me']);
+        $data = ['title'=>'About us'];
+        $this->view("pages/about",$data);
     }
 }
